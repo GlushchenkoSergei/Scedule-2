@@ -7,6 +7,7 @@
 
 
 class DataManage {
+    static let shared = DataManage()
     
     var namesData = [
         "Сам",
@@ -31,10 +32,12 @@ class DataManage {
     ]
     
     var timeOfDayData = [
-        "C 8 до 12",
-        "C 12 до 16",
-        "C 16 до 20",
-        "C 23 до"
+        8,
+        12,
+        16,
+        23
     ]
+    
+    private init() {}
     
 }

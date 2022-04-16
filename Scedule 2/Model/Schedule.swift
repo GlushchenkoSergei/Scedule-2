@@ -7,14 +7,18 @@
 
 import Foundation
 
-struct Schedule {
+struct Schedule: Comparable {
+    static func < (lhs: Schedule, rhs: Schedule) -> Bool {
+        lhs.timeOfDay < rhs.timeOfDay
+    }
+    
     let name: String
     let toDo: String
-    let timeOfDay: String
+    let timeOfDay: Int
     
 
     static func setRandomSchedule(for times: Int) -> [Schedule] {
-        let data = DataManage()
+//        let data = DataManage.shared
         var result: [Schedule] = []
        
         var funOrWork = ""
@@ -22,23 +26,24 @@ struct Schedule {
         
         for _ in 1...times {
             
-            let fun = data.toDoDataFun.randomElement()
-            let work = data.toDoDataWork.randomElement()
+            let fun = DataManage.shared.toDoDataFun.randomElement()
+            let work = DataManage.shared.toDoDataWork.randomElement()
             if number.randomElement() == 0 {
                 funOrWork = fun ?? ""
             } else {
                 funOrWork = work ?? ""
             }
             
-            let name = data.namesData.randomElement()
-            let timeOfDay = data.timeOfDayData.randomElement()
+            let name = DataManage.shared.namesData.randomElement()
+            let timeOfDay = DataManage.shared.timeOfDayData.randomElement()
             
             
-            result.append(Schedule(name: name ?? "", toDo: funOrWork , timeOfDay: timeOfDay ?? ""))
+            result.append(Schedule(name: name ?? "", toDo: funOrWork , timeOfDay: timeOfDay ?? 0))
         }
-        return result
+        return result.sorted(by: <)
     }
     
 }
+
 
 
