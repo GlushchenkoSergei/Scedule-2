@@ -17,6 +17,7 @@ class AddWorkViewController: UIViewController {
         super.viewDidLoad()
         resultAddWork.isHidden = true
         buttonSave.layer.cornerRadius = buttonSave.layer.frame.height/5
+        print("hello")
     }
     
     @IBAction func tapButtonSave(_ sender: Any) {
