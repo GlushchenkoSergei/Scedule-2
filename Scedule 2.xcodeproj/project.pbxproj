@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403B5C9280C105200B1580B /* FunTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5C8280C105200B1580B /* FunTableViewController.swift */; };
+		0403B5CB280C108200B1580B /* AddFunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5CA280C108200B1580B /* AddFunViewController.swift */; };
+		0403B5CD280C17A600B1580B /* WorkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5CC280C17A600B1580B /* WorkTableViewController.swift */; };
+		0403B5CF280C17D400B1580B /* AddWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5CE280C17D400B1580B /* AddWorkViewController.swift */; };
 		049919752802FF3200047A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049919742802FF3200047A94 /* AppDelegate.swift */; };
 		049919772802FF3200047A94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049919762802FF3200047A94 /* SceneDelegate.swift */; };
 		049919792802FF3200047A94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049919782802FF3200047A94 /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0403B5C8280C105200B1580B /* FunTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunTableViewController.swift; sourceTree = "<group>"; };
+		0403B5CA280C108200B1580B /* AddFunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFunViewController.swift; sourceTree = "<group>"; };
+		0403B5CC280C17A600B1580B /* WorkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewController.swift; sourceTree = "<group>"; };
+		0403B5CE280C17D400B1580B /* AddWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkViewController.swift; sourceTree = "<group>"; };
 		049919712802FF3200047A94 /* Scedule 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scedule 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		049919742802FF3200047A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049919762802FF3200047A94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +130,10 @@
 				04B7000228095D850055FBF7 /* SaveTableViewController.swift */,
 				04A97715280A04D100450865 /* TimeTableViewController.swift */,
 				04A97719280A06EE00450865 /* AddTimeViewController.swift */,
+				0403B5C8280C105200B1580B /* FunTableViewController.swift */,
+				0403B5CA280C108200B1580B /* AddFunViewController.swift */,
+				0403B5CC280C17A600B1580B /* WorkTableViewController.swift */,
+				0403B5CE280C17D400B1580B /* AddWorkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				049919792802FF3200047A94 /* ViewController.swift in Sources */,
+				0403B5CF280C17D400B1580B /* AddWorkViewController.swift in Sources */,
+				0403B5CD280C17A600B1580B /* WorkTableViewController.swift in Sources */,
 				04A9771A280A06EE00450865 /* AddTimeViewController.swift in Sources */,
 				04A977142809E5FC00450865 /* AddNameViewController.swift in Sources */,
 				049919752802FF3200047A94 /* AppDelegate.swift in Sources */,
@@ -207,8 +221,10 @@
 				0499198F2803017D00047A94 /* Schedule.swift in Sources */,
 				04991993280352C600047A94 /* NameTableViewController.swift in Sources */,
 				04A97716280A04D100450865 /* TimeTableViewController.swift in Sources */,
+				0403B5CB280C108200B1580B /* AddFunViewController.swift in Sources */,
 				049919952803561900047A94 /* ListViewController.swift in Sources */,
 				049919772802FF3200047A94 /* SceneDelegate.swift in Sources */,
+				0403B5C9280C105200B1580B /* FunTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

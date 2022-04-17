@@ -20,15 +20,18 @@ class AddTimeViewController: UIViewController {
     }
     
     @IBAction func tapButtonSave(_ sender: Any) {
-        if nameTextField.text != nil {
-            guard let time = nameTextField.text else { return }
-            let intTime = Int(time) ?? 0
-            DataManage.shared.timeOfDayData.append(intTime)
+        guard let time2 = Int(nameTextField.text ?? ""), time2 != 0, time2 < 25, time2 > 0 else {
+                resultAddName.text = "Введите время от 1 до 24"
+                nameTextField.text = ""
+                resultAddName.textColor = .red
+                resultAddName.isHidden = false
+                return }
+           
+            DataManage.shared.timeOfDayData.append(time2)
             resultAddName.text = "\(nameTextField.text ?? "") добавлен/а в список"
             nameTextField.text = ""
+            resultAddName.textColor = .blue
             resultAddName.isHidden = false
-        }
     }
-    
 }
 

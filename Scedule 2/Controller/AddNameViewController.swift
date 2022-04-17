@@ -20,10 +20,15 @@ class AddNameViewController: UIViewController {
     }
     
     @IBAction func tapButtonSave(_ sender: Any) {
-        if nameTextField.text != nil {
+        if nameTextField.text != nil && nameTextField.text != "" {
             DataManage.shared.namesData.append(nameTextField.text ?? "0")
             resultAddName.text = "\(nameTextField.text ?? "") добавлен/а в список"
             nameTextField.text = ""
+            resultAddName.textColor = .blue
+            resultAddName.isHidden = false
+        }  else {
+            resultAddName.text = "Введите данные"
+            resultAddName.textColor = .red
             resultAddName.isHidden = false
         }
     }
