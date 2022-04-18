@@ -35,6 +35,10 @@ class WorkTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .right)
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
 }
 
     
